@@ -1,4 +1,4 @@
-##**Susceptibility of pediatric acute lymphoblastic leukemia to STAT3 inhibition depends on p53 induction: resume of abstract**
+## **Susceptibility of pediatric acute lymphoblastic leukemia to STAT3 inhibition depends on p53 induction: resume of abstract**
 
 Advancements in pediatric B cell Acute Lymphoblastic Leukemia (B-ALL) treatment have improved outcomes, but relapsed cases remain challenging. 
 Our research shows that inhibiting STAT3 induces p53, reversing resistance in TP53 knockout cells. 
