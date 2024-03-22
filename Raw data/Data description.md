@@ -1,3 +1,5 @@
+## **Data description**
+
 Samples were obtained from the paper `Susceptibility of pediatric acute lymphoblastic leukemia to STAT3 inhibition depends on p53 induction`.
 To obtain the samples' information, we visited Gene Expression Omnibus web, where we found the title `Gene expression changes in REH following STAT3 pharmacological inhibition`.
 This GEO inofrmation is avaiable in: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179333. 
