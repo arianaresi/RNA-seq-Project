@@ -32,3 +32,8 @@ This is a repository where we describe step by step the process performed by the
 
    - Import STAR data to R
    - Normalization
+   - Batch Normalization
+   - DEG Correction (DESeq2)
+  
+**5. GSEA - Functional Analysis**
+- Heatmap
