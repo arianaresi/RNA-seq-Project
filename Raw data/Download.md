@@ -1,3 +1,11 @@
+### **Download of raw data**
+
+To download the sequences of the samples of the paper `Susceptibility of pediatric acute lymphoblastic leukemia to STAT3 inhibition depends on p53 induction`, we visited Gene Expression Omnibus web, where we found the title `Gene expression changes in REH following STAT3 pharmacological inhibition`, avaiable in: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179333.
+
+Thus, we search with the ID of each sample in the ENA Browser, avaiable in: https://www.ebi.ac.uk/ena/browser/home.
+
+Select the study where it says `Nucleotide sequences`, and in the lower table, in the column `Generated FASTQ files:FTP`, select the samples you want and left click on `Get download script`.
+
 After obtaining the script to download the samples, we perform a scheduled job on the cluster, with the following script:
 
 
