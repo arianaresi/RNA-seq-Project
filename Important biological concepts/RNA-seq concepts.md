@@ -1,3 +1,4 @@
+### **RNA_seq**
 
 RNA-seq (RNA-sequencing) is a technique that can *examine the quantity and sequences of RNA* in a sample using next-generation sequencing (NGS). 
 It analyzes the transcriptome, indicating which of the genes encoded in our DNA are turned on or off and to what extent (Mackenzie, R., 2018).
