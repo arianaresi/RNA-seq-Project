@@ -1,0 +1,4 @@
+## **Abstract**
+
+Treatment of pediatric B-cell acute lymphoblastic leukemia (B-ALL) has improved, although relapse rates persist. 
+STAT3 inhibition induces p53 expression, increasing susceptibility to treatments. In a comparative study, DMSO was used as control and S3I-201 (5uM, 6 hrs) as treatment, employing DESeq2 for differential expression analysis. STAT3 inhibition showed potential to improve treatment efficacy, highlighting the importance of further investigations in the management of pediatric B-ALL and reduction of recurrence. Differential expression analysis revealed a greater number of enriched biological processes among differentially expressed genes. Overexpression of genes associated with biological processes coincident with p53 activation was observed, indicating effective functioning of S3I-201 treatment.
