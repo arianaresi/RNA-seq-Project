@@ -69,3 +69,17 @@ This module issues a warning if the difference between A and T, or G and C is gr
 Some of the reasons why this may occur include overrepresented sequences, biased fragmentation or biased composition libraries.
 
 ![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/per_base_content.png?raw=true)
+
+### **Sequence Duplication Levels**
+
+In this item, there are 9 samples with a failure and 3 with a warning.
+
+According to Babraham Bioinformatics, in RNA-Seq libraries sequences from different transcripts will be present at wildly different levels in the starting population. In order to be able to observe lowly expressed transcripts it is therefore common to greatly over-sequence high expressed transcripts, and this will potentially create large set of duplicates. This will result in high overall duplication in this test, and will often produce peaks in the higher duplication bins. This duplication will come from physically connected regions, and an examination of the distribution of duplicates in a specific genomic region will allow the distinction between over-sequencing and general technical duplication, but these distinctions are not possible from raw fastq files. 
+
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/fastqc_sequence_duplication_levels_plot.png)
+
+### **Adapter Content**
+
+In this section, 12/12 samples passed the indicated standards, where the proportions of adapters range from 0.1% to 3.15%.
+
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/fastqc_adapter_content_plot.png)
