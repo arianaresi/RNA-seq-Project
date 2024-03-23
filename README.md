@@ -9,6 +9,8 @@ Professors of bioinformatics course: Dra. Evelia Coss, Dra. Alejandra Medina
 
 This is a repository where we describe step by step the process performed by the Pink Team during the RNA-seq Practicum.
 
+We recommend reading the [concept](https://github.com/arianaresi/RNA-seq-Project/tree/main/Important%20biological%20concepts) files to understand the biological context of this bioinformatics project.
+
 ## Overview
 
 **1. Raw Data**
@@ -33,7 +35,7 @@ In addition, each of the specific steps during the Trimming process can be revie
 
 **3. Alignment**
 
-It is a folder containing scripts and explanations of the outputs of each of the steps mentioned below, you can check out it in the [Alignment directory](https://github.com/arianaresi/RNA-seq-Project/tree/main/Alignment).
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned below, you can check out it in the [Alignment](https://github.com/arianaresi/RNA-seq-Project/tree/main/Alignment) directory.
 
    - [Definition and workflow](https://github.com/arianaresi/RNA-seq-Project/blob/main/Alignment/Definition%20and%20workflow.md)
    - [STAR index](https://github.com/arianaresi/RNA-seq-Project/blob/main/Alignment/STAR_index.md)
@@ -41,12 +43,14 @@ It is a folder containing scripts and explanations of the outputs of each of the
   
 **4. R analysis**
 
-A single code was made for import data into R, Normalization and Batch Normalization / DEG Correction you can check out it here
+The complete code diretory can be found [here](https://github.com/arianaresi/RNA-seq-Project/tree/main/R%20analysis).
 
-   - Import STAR data to R
-   - Normalization
-   - Batch Normalization
-   - DEG Correction (DESeq2)
+A single code was made for import data into R, Normalization and Batch effect correction / DGE analysis you can check out it [here](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/script_complet.txt). 
+
+   - [Import STAR data to R](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Import%20data/Import_data_R.md)
+   - [Normalization](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Normalization.md)
+   - [Batch effect correction](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Batch_effect_correction.md)
+   - [DGE Analysis (DESeq2)](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/DGE_analysis.md)
   
 **5. GSEA - Functional Analysis**
 - Heatmap
