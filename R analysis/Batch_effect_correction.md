@@ -15,7 +15,7 @@ dev.off()
 ```
 
 It is a PCA with the data normalized with rlog and it looks like this:
-
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/rlog.png)
 
 
 ```{r vsd, eval=FALSE}
@@ -28,7 +28,7 @@ dev.off()
 
 It is a PCA with the data normalized with rlog and it looks like this:
 
-
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/vsd.png)
 
 ```{r vsdata, eval=FALSE}
 # Guardar la salida del diseno (vsdata)
@@ -37,6 +37,7 @@ save(metadata, vsdata, file = paste0(outdir, 'vst_treatment_vs_control.RData'))
 
 We save the output of the vsdata design (normalized data with vst) and perform the data retrieval:
 
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/vsdata.png)
 
 ```{r res, eval=FALSE}
 ## ---------------- Obtener informacion Tratamiento/Control ----------------
@@ -50,5 +51,7 @@ write.csv(res, file=paste0(outdir, 'DE_T_vs_C.csv'))
 ```
 
 In addition, by summarizing res, we obtain the following:
+
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/res.png)
 
 Thus we combine normalization, DEG Analysis and batch effect correction in a single script named `DEG_analysis.R` avaiable in the path `/mnt/Guanina/bioinfo24/Equipo_rosa/scripts/scripts_R`.
