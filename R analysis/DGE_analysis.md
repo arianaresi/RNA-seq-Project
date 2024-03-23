@@ -47,7 +47,7 @@ dim(dds) # checar las dimensiones
 ```
 
 It is visualized as follows:
-
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/DEG.png)
 
 ```{r DEG dds, eval=FALSE}
 #Asignar referencia:
@@ -65,3 +65,4 @@ save(metadata, dds, file = paste0(outdir, 'dds_Treatment_vs_control.RData'))
 
 
 It is visualized as follows:
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/dds.png)
