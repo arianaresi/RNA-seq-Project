@@ -44,6 +44,8 @@ dim(counts)
 
 And it is visualized as follows:
 
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/counts.png)
+
 ### **Metadata**
 
 This is how we obtained a new file called metadata.csv containing information about the columns/samples of our data. 
@@ -66,15 +68,16 @@ head(metadata)
 
 It is visualized as follows:
 
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/metadata2.png)
+
 ```{r load_data_inR.txt:counts, eval=FALSE}
 counts <- as.data.frame(counts)
 rownames(counts) <- x[,1]
 colnames(counts) <- sub("_ReadsPerGene.out.tab", "", files)
 ```
 
-
 It is visualized as follows:
-
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/dataframe.png)
 
 ```{r eval=FALSE}
 # Eliminar las 4 primeras filas ______________________________________________________________________________
@@ -85,12 +88,13 @@ counts <- counts[-c(1:4),]
 save(metadata, counts, file = paste0(outdir, "counts/raw_counts.RData"))
 write.csv(counts, file = paste0(outdir,"counts/raw_counts.csv"))
 ```
-
 It is visualized as follows:
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/4columnas.png)
 
 The results of the command `write.csv(counts, file = paste0(outdir,"counts/raw_counts.csv"))` were saved in `/mnt/Guanina/bioinfo24/Equipo_rosa/results/counts`, with the following display if we do `less raw_counts.csv`: 
 
 It is visualized as follows:
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Images/rawcounts.png)
 
 - Each row begins with the name of a gene, followed by a list of expression counts for that gene in each of the samples.
 
