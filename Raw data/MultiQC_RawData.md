@@ -68,4 +68,4 @@ Per Base Sequence Content plots out the proportion of each base position in a fi
 This module issues a warning if the difference between A and T, or G and C is greater than 10% in any position.  
 Some of the reasons why this may occur include overrepresented sequences, biased fragmentation or biased composition libraries.
 
-![]([https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/FastQC_RawData.md](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/per_base_content.png?raw=true)https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/per_base_content.png?raw=true)
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Images_RawData/per_base_content.png?raw=true)
