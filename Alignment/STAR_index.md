@@ -63,3 +63,4 @@ STAR --runThreadN 12 \
 
 
 This is how the following files were obtained as output:
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Alignment/Images/STAR_index.png)
