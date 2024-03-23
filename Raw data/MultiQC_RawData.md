@@ -1,4 +1,4 @@
-### **Multiqc raw data**
+## **Multiqc raw data**
 
 Given that we have several samples, it is easy to analyze the qualities by performing a multiqc, a tool which aggregates results from bioinformatics analyses across many samples into a single report. Thus, we made the following scheduled job:
 
@@ -62,8 +62,10 @@ To sum up, we had no major problems with the qualities of the RNA-seq samples, t
 Now, we will concentrate on the specific analyses where we are interested in pointing out a few points. In Per Sequence Quality Scores, there is a call accuracy base of 99.2% to 99.9%, which is a satisfactory level of sequence quality.
 
 
-#### **Per Base Sequence Content**
+### **Per Base Sequence Content**
 
 Per Base Sequence Content plots out the proportion of each base position in a file for which each of the four normal DNA bases has been called. 
 This module issues a warning if the difference between A and T, or G and C is greater than 10% in any position.  
 Some of the reasons why this may occur include overrepresented sequences, biased fragmentation or biased composition libraries.
+
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/FastQC_RawData.md)
