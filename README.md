@@ -12,9 +12,14 @@ This is a repository where we describe step by step the process performed by the
 ## Overview
 
 **1. Raw Data**
-- [Download](https://github.com/arianaresi/RNA-seq/tree/main/RawData/Download)
-- [Fastqc](https://github.com/arianaresi/RNA-seq/tree/main/RawData/Fastqc)
-- [Multiqc](https://github.com/arianaresi/RNA-seq/tree/main/RawData/Multiqc)
+
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned above, you can check out it here: [](https://github.com/arianaresi/RNA-seq-Project).
+
+In addition, each of the specific steps during this process can be reviewed by clicking on the desired title:
+
+- [Download](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/Download.md)
+- [Fastqc](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/FastQC_RawData.md)
+- [Multiqc](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/MultiQC_RawData.md)
 
 **2. Trimming**
 
