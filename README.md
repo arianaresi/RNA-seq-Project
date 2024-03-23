@@ -52,5 +52,7 @@ A single code was made for import data into R, Normalization and Batch effect co
    - [Batch effect correction](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/Batch_effect_correction.md)
    - [DGE Analysis (DESeq2)](https://github.com/arianaresi/RNA-seq-Project/blob/main/R%20analysis/DGE_analysis.md)
   
-**5. GSEA - Functional Analysis**
-- Heatmap
+**5. Analysis of Functional Terms (GOterms)**
+
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned below, you can check out it in the [GOterms](https://github.com/arianaresi/RNA-seq-Project/tree/main/Analysis%20of%20Functional%20Terms) directory.
+- [GOterms](https://github.com/arianaresi/RNA-seq-Project/blob/main/Analysis%20of%20Functional%20Terms/GO_terms.md) (Up and down regulated genes)
