@@ -13,7 +13,7 @@ This is a repository where we describe step by step the process performed by the
 
 **1. Raw Data**
 
-It is a folder containing scripts and explanations of the outputs of each of the steps mentioned above, you can check out it here: [](https://github.com/arianaresi/RNA-seq-Project/tree/main/Raw%20data).
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned above, you can check out it [here](https://github.com/arianaresi/RNA-seq-Project/tree/main/Raw%20data).
 
 In addition, each of the specific steps during this process can be reviewed by clicking on the desired title:
 
