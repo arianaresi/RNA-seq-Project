@@ -13,7 +13,7 @@ This is a repository where we describe step by step the process performed by the
 
 **1. Raw Data**
 
-It is a folder containing scripts and explanations of the outputs of each of the steps mentioned above, you can check out it [here](https://github.com/arianaresi/RNA-seq-Project/tree/main/Raw%20data).
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned below, you can check out it [here](https://github.com/arianaresi/RNA-seq-Project/tree/main/Raw%20data).
 
 In addition, each of the specific steps during this process can be reviewed by clicking on the desired title:
 
@@ -22,10 +22,10 @@ In addition, each of the specific steps during this process can be reviewed by c
 - [Multiqc](https://github.com/arianaresi/RNA-seq-Project/blob/main/Raw%20data/MultiQC_RawData.md)
 
 **2. Trimming**
-
-   - [Results](https://github.com/arianaresi/RNA-seq/tree/main/Trimming/Results)
-   - [Fastqc](https://github.com/arianaresi/RNA-seq/tree/main/Trimming/Fastqc_trimmed)
-   - [Multiqc](https://github.com/arianaresi/RNA-seq/tree/main/Trimming/Multiqc_trimmed)
+It is a folder containing scripts and explanations of the outputs of each of the steps mentioned below, you can check out it in the [Trimming directory](https://github.com/arianaresi/RNA-seq-Project/tree/main/Trimming)
+   - [Results](https://github.com/arianaresi/RNA-seq-Project/blob/main/Trimming/Trimming_code_and_results.md)
+   - [Fastqc](https://github.com/arianaresi/RNA-seq-Project/blob/main/Trimming/FastQC_trimmed.md)
+   - [Multiqc](https://github.com/arianaresi/RNA-seq-Project/blob/main/Trimming/MultiQC_trimmed.md)
 
 **3. Alignment**
 
