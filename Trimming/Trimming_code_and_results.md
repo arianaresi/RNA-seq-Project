@@ -86,4 +86,4 @@ To contextualize the trimming results, in order to have a better organization of
 |    C3_SRR15024192_2   |  T3_SRR15024195_2  |
 
 After running the job, the following files were obtained as output:
-![](images/trimming_files.png)
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Trimming/Images/trimming_files.png)
