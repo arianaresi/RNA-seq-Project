@@ -1,0 +1,68 @@
+# --- Load packages ----------
+library(DESeq2)
+
+# --------------------- Load data ---------------------
+# Cargar archivos
+outdir <- "/mnt/Guanina/bioinfo24/Equipo_rosa/DEG_results"
+figdir <- "/mnt/Guanina/bioinfo24/Equipo_rosa/DEG_results/figures/"
+
+#Cargar variable "counts", proveniente del script "load_data_inR.R"
+load("/mnt/Guanina/bioinfo24/Equipo_rosa/results/counts/raw_counts.RData")
+samples <- Metadata$sample_id # Extraer los nombres de los Transcriptomas
+metadata$type <- as.factor(Metadata$type) # convertir a factor
+
+counts <- counts[which(rowSums(counts) > 10),] #Seleccionamos genes con mas de 10 cuentas
+
+# Convertir al formato dds
+dds <- DESeqDataSetFromMatrix(countData =  counts, 
+            colData = metadata, design = ~type)
+dim(dds) # checar las dimensiones
+
+#Asignar referencia:
+dds$type <- relevel(dds$type, ref = "control")
+
+## --- Obtener archivo dds ----
+dds <- DESeq(dds)
+
+# Obtener la lista de coeficientes o contrastes
+resultsNames(dds)
+
+# Guardar la salida del diseno
+save(metadata, dds, file = paste0(outdir, 'dds_Treatment_vs_control.RData'))
+
+
+## ---------------- Normalizacion de los datos ----------------
+
+# Opcion 2. regularized logarithm or rlog
+# Normalizacion de las cuentas por logaritmo y podrias hacer el analisis usando este objeto en lugar del dds
+ddslog <- rlog(dds, blind = F) 
+
+# Opcion 3. vsd
+# Estima la tendencia de dispersion de los datos y calcula la varianza, hace una normalizacion de las 
+# cuentas con respecto al tamaño de la libreria
+vsdata <- vst(dds, blind = F) 
+
+## ---------------- Deteccion de batch effect ----------------
+# Almacenar la grafica
+png(file = paste0(figdir, "PCA_rlog.png"))
+plt <- plotPCA(ddslog, intgroup = "type")
+print(plt)
+dev.off()
+
+# Almacenar la grafica
+png(file = paste0(figdir, "PCA_vsd.png"))
+plt <- plotPCA(vsdata, intgroup = "type")
+print(plt)
+dev.off()
+
+# Guardar la salida del diseno (vsdata)
+save(metadata, vsdata, file = paste0(outdir, 'vst_treatment_vs_control.RData'))
+
+## ---------------- Obtener informacion Tratamiento/Control ----------------
+# results(dds, contrast=c("condition","treated","untreated"))
+res <- results(dds, name = "type_tratamiento_vs_control")
+res
+summary(res)
+
+# Guardar los resultados
+write.csv(res, file=paste0(outdir, 'DE_T_vs_C.csv'))
