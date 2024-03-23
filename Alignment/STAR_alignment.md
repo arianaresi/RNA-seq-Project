@@ -77,3 +77,51 @@ done
 
 
 Now, what **output** did the alignment process give us?
+
+![](https://github.com/arianaresi/RNA-seq-Project/blob/main/Alignment/Images/output_STAR_alignment.png)
+
+
+Now we will see **what each file is for**
+
+**Aligned.sortedByCoord.out.bam:** contains the reads aligned against the reference genome, sorted by genomic coordinates. 
+
+**Log.final.out:** provides an overall summary of the alignment process and the parameters used.
+
+**Log.out:** records events and messages during the execution of the alignment process.
+
+**Log.progress.out:** show the progress of the alignment process.
+
+**ReadsPerGene.out.tab:** contains counts of aligned reads per gene. They are useful for differential gene expression analysis.
+
+**SJ.out.tab:**contains information about splice junctions found during alignment. These junctions are important for identifying introns and alternative splicing events.
+
+**STARtmp:** temporary directories used during the alignment process.
+
+
+The file we used (and therefore give higher priority to) are the .out.tab files. 
+
+You can open them with a `less file.out.tab`
+
+
+Here, we explain the .out.tab files:
+
+
+Each row in this file represents an entry for a specific gene and provides information on the number of reads aligned to that gene.
+
+**Column 1 (chr):** the name of the chromosome or reference sequence where the gene is located.
+
+**Column 2 (start):** the starting position of the gene on the chromosome.
+
+**Column 3 (end):** the end position of the gene on the chromosome.
+
+**Column 4 (strand):** the orientation of the gene (1 for positive sense, -1 for negative sense).
+
+**Column 5 (Length):** the length of the gene.
+
+**Column 6 (EffectiveLength):** the effective length of the gene.
+
+**Column 7 (expected_count):** the expected number of reads aligned to this gene.
+
+**Column 8 (TPM):** transcripts Per Million, a measure of the relative abundance of the gene in the sample.
+
+**Column 9 (FPKM):** fragments Per Kilobase of transcript per Million mapped reads, another measure of the relative abundance of the gene.
