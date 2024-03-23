@@ -11,6 +11,8 @@ This is a repository where we describe step by step the process performed by the
 
 We recommend reading the [concept](https://github.com/arianaresi/RNA-seq-Project/tree/main/Important%20biological%20concepts) files to understand the biological context of this bioinformatics project.
 
+In the same way, we wrote the following [abstract](https://github.com/arianaresi/RNA-seq-Project/tree/main/Abstract) of our project.
+
 ## Overview
 
 **1. Raw Data**
